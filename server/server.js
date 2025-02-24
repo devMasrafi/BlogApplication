@@ -5,6 +5,7 @@ const connectDB = require("./config/dbConnect");
 const UserRoutes = require("./routes/userRoutes.js");
 const authRoutes = require("./routes/authRoutes.js");
 const user = require("./routes/user.js");
+const postsRoute = require("./routes/postsRoutes.js");
 
 // connection
 dotenv.config();
@@ -18,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1", UserRoutes);
 app.use("/api/v1", authRoutes);
 app.use("/api/v1", user);
+app.use("/api/v1/posts", postsRoute);
 
 // console.log(process.env);
 const port = process.env.PORT;

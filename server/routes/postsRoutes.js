@@ -33,4 +33,26 @@ router.post("/", authMiddleware, async (req, res) => {
   }
 });
 
+// get all post
+router.get("/", async (req, res) => {
+  try {
+    const posts = await Post.find()
+      .populate("author", "username email")
+      .sort({ createdAt: -1 });
+
+    res.status(200).json(posts);
+  } catch (error) {
+    res.status(500).json({ message: "Server Error", error });
+  }
+});
+
+router.get("/:id", async (req, res) =>{
+  try {
+    
+  } catch (error) {
+    
+  }
+} )
+
+
 module.exports = router;

@@ -4,8 +4,8 @@
 }
 
 {
-"username": "john_doe",
-"email": "john@example.com",
-"password": "password123",
-"role": "author",
+"username": "authorUser",
+"email": "author@example.com",
+"password": "mysecretpassword",
+"role": "author"
 }

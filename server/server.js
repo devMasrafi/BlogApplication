@@ -6,6 +6,7 @@ const UserRoutes = require("./routes/userRoutes.js");
 const authRoutes = require("./routes/authRoutes.js");
 const user = require("./routes/user.js");
 const postsRoute = require("./routes/postsRoutes.js");
+const commentsRoute = require("./routes/commentsRoute.js");
 
 // connection
 dotenv.config();
@@ -20,7 +21,7 @@ app.use("/api/v1", UserRoutes);
 app.use("/api/v1", authRoutes);
 app.use("/api/v1", user);
 app.use("/api/v1/posts", postsRoute);
-
+app.use("/api/v1/posts/comments", commentsRoute);
 // console.log(process.env);
 const port = process.env.PORT;
 

@@ -42,7 +42,7 @@ router.post(
 // get all post
 router.get("/", async (req, res) => {
   try {
-    const { page = 1, limit = 10 } = req.params;
+    const { page = 1, limit = 10 } = req.query;
 
     // pagination
     const pageNumbers = parseInt(page);

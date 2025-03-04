@@ -42,11 +42,33 @@ router.post(
 // get all post
 router.get("/", async (req, res) => {
   try {
-    const posts = await Post.find()
-      .populate("author", "username email")
-      .sort({ createdAt: -1 });
+    const { page = 1, limit = 10 } = req.params;
 
-    res.status(200).json(posts);
+    // pagination
+    const pageNumbers = parseInt(page);
+    const pageLimit = parseInt(limit);
+
+    const skip = (pageNumbers - 1) * pageLimit;
+
+    // get post
+    const posts = await Post.find()
+      .populate("author", "username")
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(pageLimit);
+
+    const totalPosts = await Post.countDocuments();
+    const totalPageNumber = Math.ceil(totalPosts / pageLimit);
+
+    res.status(200).json({
+      posts,
+      pagination: {
+        currentPage: pageNumbers,
+        totalPageNumber,
+        totalPosts,
+        pageSize: pageLimit,
+      },
+    });
   } catch (error) {
     res.status(500).json({ message: "Server Error", error });
   }

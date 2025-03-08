@@ -1,12 +1,19 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import MainLayout from "./components/layouts/MainLayout";
 
 function App() {
-
-
   return (
-    <>
-      <h1 class="p-0 pt-2 text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

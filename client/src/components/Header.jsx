@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <div className="lg:my-3 lg:flex lg:items-center lg:justify-between">
+    <div className="lg:my-4 lg:flex lg:items-center lg:justify-between">
       <div className="lg:ml-3 lg:flex lg:space-x-2">
         <CiYoutube className="lg:text-3xl" />
         <CiFacebook className="lg:text-3xl" />

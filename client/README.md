@@ -1,3 +1,24 @@
+Google Fonts value
+
+.outfit-<uniquifier> {
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+
+.assistant-<uniquifier> {
+font-family: "Assistant", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+.poppins-thin {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

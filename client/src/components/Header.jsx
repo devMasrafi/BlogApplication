@@ -5,14 +5,14 @@ import { FaYoutube } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center ">
-      <div className="flex space-x-2">
-        <FaFacebook className="text-xl " />
-        <FaInstagram className="text-xl " />
-        <FaYoutube  className="text-xl "/>
+    <div className="lg:my-3 lg:ml-3 lg:flex lg:items-center lg:justify-between">
+      <div className="lg:flex lg:space-x-2">
+        <FaFacebook className="lg:text-2xl" />
+        <FaInstagram className="lg:text-2xl" />
+        <FaYoutube className="lg:text-2xl" />
       </div>
-      <div>
-        <h2 className="text-3xl font-medium italic">Logo</h2>
+      <div className="lg:w-[8rem]">
+        <img src="../../Logo.png" alt="site logo" />
       </div>
       <div>
         <button>contact</button>

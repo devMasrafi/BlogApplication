@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const ButtonComponents = () => {
+const ButtonComponents = ({ className = "", onClick, children }) => {
+  const baseStyle = `px-6 py-1 font-poppins transition duration-300 corsor-pointer rounded-sm`;
+
   return (
-    <div>ButtonComponents</div>
-  )
-}
+    <button className={`${className} ${baseStyle}`} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
 
-export default ButtonComponents
+export default ButtonComponents;

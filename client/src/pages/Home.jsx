@@ -2,9 +2,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <div>
-      </div>
+    <div className="h-[60rem] ">
+      <div></div>
       Home
     </div>
   );

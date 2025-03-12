@@ -11,4 +11,5 @@
   --color-primary: #FFF;
   --color-secondary: #1E1837;
   --color-ascient: #FFFEF2;
+  --shadow-topside: 0px -4px 15px -4px rgba(0,0,0,0.23);
 }

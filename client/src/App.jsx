@@ -11,15 +11,19 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import TermsAndCondition from "./pages/TermsAndCondition";
+import Support from "./pages/Support";
+import Lisence from "./pages/Lisence";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/termsandcondition" element={<TermsAndCondition/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/termsandcondition" element={<TermsAndCondition />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/lisence" element={<Lisence />} />
 
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />

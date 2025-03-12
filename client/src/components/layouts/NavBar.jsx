@@ -12,7 +12,7 @@ const NavBar = () => {
         <div className="lg:mx-4">
           <img
             className="lg:h-[2rem] lg:w-[2rem] lg:rounded-full"
-            src="../../../public/pexels-ron-lach-9604304.jpg"
+            src="../../../pexels-ron-lach-9604304.jpg"
             alt="profile image"
           />
         </div>

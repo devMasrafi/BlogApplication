@@ -1,8 +1,10 @@
 import React from "react";
+import ScrollToTop from "../components/scrollToTop";
 
 const Home = () => {
   return (
-    <div className="h-[60rem] ">
+    <div className="h-[120rem]">
+      <ScrollToTop  />
       <div></div>
       Home
     </div>

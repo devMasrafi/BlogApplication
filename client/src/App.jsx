@@ -19,13 +19,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+
         <Route path="/termsandcondition" element={<TermsAndCondition />} />
         <Route path="/support" element={<Support />} />
         <Route path="/lisence" element={<Lisence />} />
 
         <Route element={<MainLayout />}>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />

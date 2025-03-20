@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 import Header from "../Header";
 import { RiCheckboxBlankLine, RiCheckboxBlankFill } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
@@ -9,13 +9,20 @@ const NavBar = () => {
     <nav>
       <Header />
       <div className="lg:border-secondary/20 lg:flex lg:items-center lg:justify-between lg:border-y-2">
-        <div className="lg:mx-4">
-          <img
-            className="lg:h-[2rem] lg:w-[2rem] lg:rounded-full"
-            src="../../../pexels-ron-lach-9604304.jpg"
-            alt="profile image"
-          />
-        </div>
+        <Link to={"/login"}>
+          <div className="flex items-center justify-center gap-x-3 lg:mx-4">
+            <div>
+              <img
+                className="lg:h-[2rem] lg:w-[2.5rem] lg:rounded-full"
+                src="../../../pexels-ron-lach-9604304.jpg"
+                alt="profile image"
+              />
+            </div>
+            <h3 className="text-md font-poppins font-semibold text-nowrap capitalize">
+              login
+            </h3>
+          </div>
+        </Link>
         <div className="lg:w-full">
           <ul className="font-poppins @container mx-auto flex justify-center px-3 py-3 font-medium capitalize lg:flex lg:space-x-8 lg:text-lg">
             <li>

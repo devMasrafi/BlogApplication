@@ -29,8 +29,11 @@ const ScrollToTop = () => {
   return (
     <div className="fixed right-4 bottom-4 z-50 rounded-full">
       {isVisible && (
-        <button onClick={scrollToTop} className="rounded-full  bg-blue-500 p-2 text-white">
-          <FaRegArrowAltCircleUp className="text-5xl" />
+        <button
+          onClick={scrollToTop}
+          className="bg-secondary/70 rounded-full p-2 text-white"
+        >
+          <FaRegArrowAltCircleUp className="text-3xl" />
         </button>
       )}
     </div>

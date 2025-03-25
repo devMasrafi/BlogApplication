@@ -33,7 +33,7 @@ const Footer = () => {
 
   return (
     <section className="shadow-topside lg:my-[2rem] lg:flex lg:justify-around lg:px-3 lg:pt-[4rem]">
-      <div>
+      <div className="">
         <div className="lg:border-secondary/30 border-b-2 lg:mb-3">
           <div>
             <img src="../../../Logo.png" alt="site logo" />
@@ -57,7 +57,7 @@ const Footer = () => {
         </p>
       </div>
       {/* usefull links */}
-      <div>
+      <div >
         <h2 className="font-outfit capitalize lg:text-2xl lg:font-medium lg:tracking-wider">
           usefull links
         </h2>

@@ -2,6 +2,8 @@ import React from "react";
 import ScrollToTop from "../components/scrollToTop";
 import ButtonComponents from "../components/ButtonComponents";
 import FeaturePosts from "../components/FeaturePosts";
+import MostRecentPosts from "../components/MostRecentPost";
+import Newsletter from "../components/NewsLetter";
 
 const Home = () => {
   return (
@@ -43,9 +45,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/*  */}
+      {/* feature posts */}
       <section>
         <FeaturePosts />
+      </section>
+
+      <section className="mt-[15rem]">
+        <MostRecentPosts />
+      </section>
+
+      <section className="mt-[15rem] ">
+        <Newsletter />
       </section>
     </main>
   );
